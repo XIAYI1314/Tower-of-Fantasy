@@ -11,6 +11,7 @@
 #include "feats/no_clip.hpp"
 #include "feats/ping.hpp"
 #include "feats/quest.hpp"
+#include "feats/rapid_attack.hpp"
 #include "feats/teleport_anywhere.hpp"
 #include "feats/teleport_box.hpp"
 #include "feats/teleport_nucleus.hpp"
@@ -59,6 +60,7 @@ int MainThread(HINSTANCE hInstDLL) {
     REGISTER_FEATURE(Feats::Ping);
     REGISTER_FEATURE(Feats::TeleportBox);
     REGISTER_FEATURE(Feats::JumpHeight);
+    REGISTER_FEATURE(Feats::RapidAttack);
 
     while (true) {
         if (Feats::Hotkey::hotkeyPressed(confExit)) {
